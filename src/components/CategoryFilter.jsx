@@ -1,8 +1,11 @@
 import React from 'react';
 
-const categories = ['All', 'Electronics', 'Clothing', 'Accessories', 'Home', 'Sports', 'Beauty'];
+const categories = ['All', 'Electronics', 'Home', 'Sports', 'Beauty'];
 
 const CategoryFilter = ({ setSelectedCategory }) => {
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category === 'All' ? null : category); // Null will represent "All" to show all products
+  };
   return (
     <div className="category-filter-container">
       {/* Dropdown Filter */}
@@ -22,7 +25,7 @@ const CategoryFilter = ({ setSelectedCategory }) => {
           <button
             key={index}
             className="category-item"
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => handleCategoryChange(category)}
           >
             {category}
           </button>

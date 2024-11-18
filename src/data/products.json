@@ -86,5 +86,93 @@
       "price": "₹14999.99",
       "image": "/images/smartphone2.jpeg",
       "description": "Feature-packed smartphone with fast charging."
-  }
+  },
+  {
+    "id": 12,
+    "name": "Football",
+    "category": "Sports",
+    "price": "₹599.99",
+    "image": "/images/sport1.jpeg",
+    "description": "Durable and high-quality football, perfect for outdoor games and practice sessions."
+},
+{
+    "id": 13,
+    "name": "Cricket Bat",
+    "category": "Sports",
+    "price": "₹1999.99",
+    "image": "/images/sport2.jpeg",
+    "description": "Lightweight cricket bat made with premium willow for maximum power and precision."
+},
+{
+    "id": 14,
+    "name": "Yoga Mat",
+    "category": "Sports",
+    "price": "₹899.99",
+    "image": "/images/sport3.jpeg",
+    "description": "Non-slip yoga mat with extra cushioning, ideal for yoga, pilates, and workouts."
+},
+{
+    "id": 15,
+    "name": "Badminton Racket Set",
+    "category": "Sports",
+    "price": "₹1599.99",
+    "image": "/images/sport4.jpeg",
+    "description": "High-quality badminton racket set with durable strings and lightweight frame."
+},
+{
+  "id": 16,
+  "name": "Moisturizing Cream",
+  "category": "Beauty",
+  "price": "₹499.99",
+  "image": "/images/beauty1.jpeg",
+  "description": "Hydrating and lightweight cream suitable for all skin types, enriched with vitamins."
+},
+{
+  "id": 17,
+  "name": "Lipstick Set",
+  "category": "Beauty",
+  "price": "₹1299.99",
+  "image": "/images/beauty2.jpeg",
+  "description": "Long-lasting lipstick set with a variety of vibrant shades for every occasion."
+},
+{
+  "id": 18,
+  "name": "Face Serum",
+  "category": "Beauty",
+  "price": "₹799.99",
+  "image": "/images/beauty3.jpeg",
+  "description": "Brightening face serum with natural ingredients to enhance skin glow and reduce spots."
+},
+{
+  "id": 19,
+  "name": "Makeup Brush Set",
+  "category": "Beauty",
+  "price": "₹899.99",
+  "image": "/images/beauty4.jpeg",
+  "description": "High-quality makeup brush set for flawless application, includes 10 essential brushes."
+},
+{
+  "id": 20,
+  "name": "Hair Serum",
+  "category": "Beauty",
+  "price": "₹599.99",
+  "image": "/images/beauty5.jpeg",
+  "description": "Nourishing hair serum for smooth and frizz-free hair, suitable for all hair types."
+},
+{
+  "id": 21,
+  "name": "Ceramic Table Lamp",
+  "category": "Home",
+  "price": "₹1499.99",
+  "image": "/images/home1.jpeg",
+  "description": "Elegant ceramic table lamp with a soft glow, perfect for bedrooms and living rooms."
+},
+{
+  "id": 22,
+  "name": "Wall Clock",
+  "category": "Home",
+  "price": "₹799.99",
+  "image": "/images/home2.jpeg",
+  "description": "Stylish wall clock with a modern design, fits perfectly in any home decor setup."
+}
 ]
