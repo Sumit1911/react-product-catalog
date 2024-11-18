@@ -21,14 +21,16 @@ const ProductList = () => {
   }, [searchTerm, selectedCategory, products]);
 
   return (
-    <div>
+    <div className='container'>
       <SearchBar setSearchTerm={setSearchTerm} />
+     <div className='container-content'>
       <CategoryFilter setSelectedCategory={setSelectedCategory} />
       <div className="product-list">
         {filteredProducts.map(product => (
           <ProductItem key={product.id} product={product} />
         ))}
       </div>
+     </div>
     </div>
   );
 };

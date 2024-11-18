@@ -1,19 +1,90 @@
 [
-    {
+  {
       "id": 1,
       "name": "Wireless Headphones",
       "category": "Electronics",
-      "price": 99.99,
-      "image": "images/headphones.jpg",
+      "price": "₹1999.99",
+      "image": "/images/headphone1.jpeg",
       "description": "High-quality wireless headphones with noise cancellation."
-    },
-    {
+  },
+  {
       "id": 2,
       "name": "Smart Watch",
       "category": "Electronics",
-      "price": 199.99,
-      "image": "images/smartwatch.jpg",
+      "price": "₹199.99",
+      "image": "/images/download (1).jpeg",
       "description": "Stay connected on the go with this stylish smart watch."
-    }
+  },
+  {
+      "id": 3,
+      "name": "Wireless Headphones Pro",
+      "category": "Electronics",
+      "price": "₹2999.99",
+      "image": "/images/headphone2.jpeg",
+      "description": "Premium wireless headphones with superior sound quality."
+  },
+  {
+      "id": 4,
+      "name": "Smart Watch Ultra",
+      "category": "Electronics",
+      "price": "₹499.99",
+      "image": "/images/download (2).jpeg",
+      "description": "Advanced smartwatch with fitness tracking and GPS."
+  },
+  {
+      "id": 5,
+      "name": "Wireless Headphones Mini",
+      "category": "Electronics",
+      "price": "₹1499.99",
+      "image": "/images/headphone3.png",
+      "description": "Compact wireless headphones perfect for travel."
+  },
+  {
+      "id": 6,
+      "name": "Smart Watch Basic",
+      "category": "Electronics",
+      "price": "₹99.99",
+      "image": "/images/download.jpeg",
+      "description": "Affordable smartwatch with essential features."
+  },
+  {
+      "id": 7,
+      "name": "Wireless Headphones Max",
+      "category": "Electronics",
+      "price": "₹3999.99",
+      "image": "/images/headphone4.jpeg",
+      "description": "High-end wireless headphones with active noise cancellation."
+  },
+  {
+      "id": 8,
+      "name": "Smart Watch Classic",
+      "category": "Electronics",
+      "price": "₹299.99",
+      "image": "/images/smartwatch1.jpeg",
+      "description": "Classic smartwatch design with modern features."
+  },
+  {
+      "id": 9,
+      "name": "Laptop HP",
+      "category": "Electronics",
+      "price": "₹52499.99",
+      "image": "/images/laptop1.jpeg",
+      "description": "Wireless gaming headphones with surround sound."
+  },
+  {
+      "id": 10,
+      "name": "Smartphone A1",
+      "category": "Electronics",
+      "price": "₹9999.99",
+      "image": "/images/smartphone1.jpeg",
+      "description": "Sleek and powerful smartphone with excellent camera."
+  },
+  {
+      "id": 11,
+      "name": "Smartphone B2",
+      "category": "Electronics",
+      "price": "₹14999.99",
+      "image": "/images/smartphone2.jpeg",
+      "description": "Feature-packed smartphone with fast charging."
+  }
 ]
-  
