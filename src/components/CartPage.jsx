@@ -3,7 +3,7 @@ import { useCart } from "./CartContext";
 import { Link } from "react-router-dom";
 
 const CartPage = () => {
-  const { cart } = useCart();
+  const { cart, removeFromCart } = useCart();
 
   if (cart.length === 0) {
     return (
@@ -27,10 +27,15 @@ const CartPage = () => {
                 <p>Price: {product.price}</p>
               </div>
             </Link>
+            <button
+              className="remove-from-cart"
+              onClick={() => removeFromCart(product.id)}
+            >
+              Remove from Cart
+            </button>
           </li>
         ))}
       </ul>
-      <Link to="/">Back to Product List</Link>
     </div>
   );
 };

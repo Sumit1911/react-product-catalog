@@ -5,16 +5,17 @@ import CategoryFilter from './CategoryFilter';
 import productsData from '../data/products.json';
 
 const ProductList = () => {
-  const [products, setProducts] = useState(productsData);
+  const [products] = useState(productsData);
   const [filteredProducts, setFilteredProducts] = useState(productsData);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  
 
   useEffect(() => {
     let filtered = products.filter(product =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    if (selectedCategory) {
+    if (selectedCategory !==  'All') {
       filtered = filtered.filter(product => product.category === selectedCategory);
     }
     setFilteredProducts(filtered);
@@ -22,14 +23,18 @@ const ProductList = () => {
 
   return (
     <div className='container'>
-      <SearchBar setSearchTerm={setSearchTerm} />
+        <SearchBar setSearchTerm={setSearchTerm} />
      <div className='container-content'>
       <CategoryFilter setSelectedCategory={setSelectedCategory} />
       <div className="product-list">
-        {filteredProducts.map(product => (
-          <ProductItem key={product.id} product={product} />
-        ))}
-      </div>
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <ProductItem key={product.id} product={product} />
+            ))
+          ) : (
+            <p>No products found</p>
+          )}
+        </div>
      </div>
     </div>
   );

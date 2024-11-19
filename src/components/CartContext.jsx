@@ -11,10 +11,14 @@ export const CartProvider = ({ children }) => {
     setCart((prevCart) => [...prevCart, product]);
   };
 
+  const removeFromCart = (id) => {
+    setCart((prevCart) => prevCart.filter((item) => item.id !== id));
+  };
+
   const cartCount = cart.length;
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, cartCount }}>
+    <CartContext.Provider value={{ cart, addToCart, cartCount, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );

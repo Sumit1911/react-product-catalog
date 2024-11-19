@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, isInCart, removeFromCart }) => {
   return (
     <div className="product-item">
       <div className='product-image-content'>
@@ -13,6 +13,15 @@ const ProductItem = ({ product }) => {
         <Link to={`/product/${product.id}`}>
           <button>View Details</button>
         </Link>
+
+        {isInCart && (
+          <button
+            className="remove-from-cart"
+            onClick={() => removeFromCart(product.id)}
+          >
+            Remove from Cart
+          </button>
+        )}
       </div>
     </div>
   );

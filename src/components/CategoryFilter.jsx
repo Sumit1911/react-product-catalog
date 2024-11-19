@@ -4,11 +4,10 @@ const categories = ['All', 'Electronics', 'Home', 'Sports', 'Beauty'];
 
 const CategoryFilter = ({ setSelectedCategory }) => {
   const handleCategoryChange = (category) => {
-    setSelectedCategory(category === 'All' ? null : category); // Null will represent "All" to show all products
+    setSelectedCategory(category);
   };
   return (
     <div className="category-filter-container">
-      {/* Dropdown Filter */}
       <div className="category-dropdown">
         <select onChange={(e) => setSelectedCategory(e.target.value)}>
           {categories.map((category, index) => (
@@ -19,7 +18,6 @@ const CategoryFilter = ({ setSelectedCategory }) => {
         </select>
       </div>
 
-      {/* Product Categories List */}
       <div className="category-list">
         {categories.map((category, index) => (
           <button
